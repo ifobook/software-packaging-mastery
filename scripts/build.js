@@ -11,7 +11,7 @@ const source = fs.readFileSync(path.join(root, "src/index.js"), "utf8");
 
 const transformed = source.replace(
   'require("../package.json")',
-  'require("./package.json")'
+  'require("../package.json")'
 );
 
 fs.writeFileSync(
@@ -19,10 +19,7 @@ fs.writeFileSync(
   "#!/usr/bin/env node\n" + transformed
 );
 
-fs.copyFileSync(
-  path.join(root, "package.json"),
-  path.join(dist, "package.json")
-);
+
 
 fs.chmodSync(path.join(dist, "index.js"), 0o755);
 

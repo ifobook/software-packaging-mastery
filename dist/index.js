@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const express = require("express");
-const { version, name } = require("./package.json");
+const { version, name } = require("../package.json");
 
 const app = express();
 
