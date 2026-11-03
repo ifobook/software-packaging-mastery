@@ -1,0 +1,9 @@
+src/
+scripts/
+screenshots/
+docs/
+artifacts/
+node_modules/
+.env
+.env.*
+.git/

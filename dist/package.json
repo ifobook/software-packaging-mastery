@@ -1,0 +1,28 @@
+{
+  "name": "software-packaging-mastery",
+  "version": "1.0.0",
+  "description": "DevOps software packaging and release management project",
+  "main": "dist/index.js",
+  "bin": {
+    "packaging-demo": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "NODE_ENV=development PORT=3000 node dist/index.js",
+    "staging": "NODE_ENV=staging PORT=4000 node dist/index.js",
+    "build": "node scripts/build.js",
+    "audit:deps": "npm audit --omit=dev",
+    "pack:verify": "npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
