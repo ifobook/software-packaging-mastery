@@ -1,0 +1,7 @@
+
+> software-packaging-mastery@1.0.0 integrity
+> bash scripts/verify-artifact.sh
+
+Verifying SHA256 checksum...
+artifacts/software-packaging-mastery-1.0.0.tgz: OK
+Artifact integrity verified successfully.
